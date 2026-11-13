@@ -1,6 +1,8 @@
 # Mediator
 
-[[_TOC_]]
+## Current version
+
+1.7
 
 ## Parameters
 
@@ -39,6 +41,9 @@
 Name|Description|Required|sample
 ----|-----------|--------|-----
 exclude|delimited string with the codes to exclude/translate||405\|200,404\|202
+promotefault| **promotes** IsFault if responseCode is fault||true
+setfaultschema|sets SchemaStrongName to soapfault **if** fault||true
+outputstatuscode|if set to 0 set OutboundHttpStatusCode to the responseCode otherwise set it to a hardcoded int||500
 
 [Back to top](#mediator)
 
